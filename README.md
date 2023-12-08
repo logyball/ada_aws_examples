@@ -1,4 +1,4 @@
-# ada_aws_examples
+# Ada AWS Examples
 
 Some small examples to illustrate how to interact with AWS with code.
 
