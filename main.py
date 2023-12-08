@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser(
         prog='AdaAwsExamples',
         description='A few s3 examples')
-    parser.add_argument('-l', '--list', action='store_true')
+    parser.add_argument('-l', '--list', action='store_true', help="list all available buckets")
     parser.add_argument('-c', '--create', help="create a bucket. ex: --create my-bucket-name")
     parser.add_argument('-d', '--delete', help="delete a bucket. ex: --delete my-bucket-name")
     args = parser.parse_args()
