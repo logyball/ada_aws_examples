@@ -21,6 +21,21 @@ Set up the virtual environment:
 > (venv) make install
 ```
 
+```sh
+> python main.py -h
+usage: AdaAwsExamples [-h] [-l] [-c CREATE] [-d DELETE]
+
+A few s3 examples
+
+options:
+  -h, --help            show this help message and exit
+  -l, --list
+  -c CREATE, --create CREATE
+                        create a bucket. ex: --create my-bucket-name
+  -d DELETE, --delete DELETE
+                        delete a bucket. ex: --delete my-bucket-name
+```
+
 # List buckets
 
 ```sh
