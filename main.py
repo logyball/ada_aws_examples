@@ -1,5 +1,4 @@
-import boto3, sys, argparse
-from pprint import pprint
+import boto3, argparse
 
 
 def list_buckets(s3):
@@ -8,9 +7,11 @@ def list_buckets(s3):
     for b in buckets:
        print(f"Bucket name: { b.get('Name', 'name not found') }")
 
+
 def create_bucket(s3, bucket_name):
     s3.create_bucket(Bucket=bucket_name)
     list_buckets(s3)
+
 
 def delete_bucket(s3, bucket_name):
     s3.delete_bucket(Bucket=bucket_name)
@@ -22,8 +23,8 @@ def main():
         prog='AdaAwsExamples',
         description='A few s3 examples')
     parser.add_argument('-l', '--list', action='store_true')
-    parser.add_argument('-c', '--create')
-    parser.add_argument('-d', '--delete')
+    parser.add_argument('-c', '--create', help="create a bucket. ex: --create my-bucket-name")
+    parser.add_argument('-d', '--delete', help="delete a bucket. ex: --delete my-bucket-name")
     args = parser.parse_args()
 
     s3_client = boto3.client('s3')
