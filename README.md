@@ -8,7 +8,7 @@ Some small examples to illustrate how to interact with AWS with code.
 
 # Getting Started
 
-Make sure to install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [set up your credentials beforehand.]([https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html))
+Make sure to install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [set up your credentials beforehand.](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
 ```sh
 > aws configure
